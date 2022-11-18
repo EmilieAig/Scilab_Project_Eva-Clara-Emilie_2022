@@ -29,5 +29,11 @@ function [DATA, INFO] = readTrial(trialName, phase)
         end
     if rhs == 1 then
         disp(echauffement), disp(effort), disp(recovery);
+     if phase == 'echauffement' then 
+            DATA = echauffement
+        elseif phase == 'effort' then 
+            DATA = effort
+        elseif phase == 'recovery' then 
+            DATA = recovery
     end
 endfunction
