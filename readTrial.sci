@@ -1,4 +1,5 @@
 function [DATA, INFO] = readTrial(trialName, phase)
+    [lhs, rhs] = argn();
     txtFullPath = fullfile(DAT_PATH, trialName + ".txt");
     infFullPath = fullfile(DAT_PATH, trialName + ".inf");
     readInfFile = fscanfMat(infFullPath);
@@ -17,6 +18,17 @@ function [DATA, INFO] = readTrial(trialName, phase)
     effort = Period_Effort;
     recovery = readTxtFile(iRecovery,:);
     DATA = [];
+    if rhs == 2 then
+         if phase == 'echauffement' then 
+                DATA = echauffement
+            elseif phase == 'effort' then 
+                DATA = effort
+            elseif phase == 'recovery' then 
+                DATA = recovery
+            end
+        end
+    if rhs == 1 then
+        disp(echauffement), disp(effort), disp(recovery);
      if phase == 'echauffement' then 
             DATA = echauffement
         elseif phase == 'effort' then 
