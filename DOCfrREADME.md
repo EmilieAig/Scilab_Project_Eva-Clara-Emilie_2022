@@ -38,15 +38,19 @@ Emilie a créé le projet Scilab_Projet_Eva-Clara-Emilie_2022 sur Github.
 Dans la branche principale, nous avons créé 3 fichiers : DAT, PRG et RES. 
 Puis, nous avons créé 3 branches : DM01, DM02 et DM03. 
 A l’intérieur de chaque branche, nous avons créé 3 sous branches sous la forme de : DM01_Prénom. Dans chacune de nos branches correspondant au DM en question, nous avons donc déposé une partie du code. 
+
 Les parties de code ont été divisées comme tel : 
+
 DM01 : 
 - Eva : fonction sinusoïde.
 - Emilie : créer une fenêtre vierge avec un numéro aléatoire.
 - Clara : utiliser la fonction sinusoïde dans une boucle for pour créer des sinusoïdes avec des fréquences 	différentes.
+
 DM02 : 
 - Clara : questions 2, 3, 4 et 9.
 - Eva : questions 5 et 8.
 - Emilie : questions 6 et 7.
+
 DM03 : 
 - Clara : questions 2, 3 et 4.
 - Eva : questions 5, 8 et 9.
